@@ -10,6 +10,6 @@ app.get('/hello', (req, res)=>{
     res.send("Hello Express");
 });
 
-app.listen(3000, ()=>{
-    console.log("Server is up on port 3000");
+app.listen(8080, ()=>{
+    console.log("Server is up on port 8080");
 });

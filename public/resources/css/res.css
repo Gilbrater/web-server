@@ -1,0 +1,102 @@
+/*----------------------------------------------------------------*/
+/* HEADER */
+/*----------------------------------------------------------------*/
+/*----------NAV------------------*/
+nav{
+    background-color: rgba(50, 100, 142, 0.97);
+    color:white;
+    height: 50px;
+    width:100%;
+    position:fixed;
+    z-index:9999;
+}
+
+/* ---------NAVIGATION-----------*/
+header{
+    background-color: #555;
+    height:28vh;
+    color:white;
+}
+
+/* ---------JUMBOTRON-----------*/
+.hero-search-box{
+    position:absolute;
+    width:1140;
+    text-transform: uppercase;
+    top:17%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+
+/*----------------------------------------------------------------*/
+/* RESULT CARD */
+/*----------------------------------------------------------------*/
+
+.section-results .col{
+    margin:0;
+    padding: 0;
+}
+.section-results{
+    background-color: #f7f7f7;
+    color:#555;
+}
+.section-results .result-card{
+    width: 600px;
+    height: 130px;
+    background-color: #fff;
+    padding: 0px 0 0 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px #bbb;
+}
+
+.section-results .section1{
+    height:65%;
+    border-bottom:1px solid #ddd;
+}
+
+.section-results .airline-logo{
+    height:100%;
+    border-right: 1px solid #ddd;
+    margin: 0;
+}
+
+.section-results .section2{
+    height:65%;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    width: 102.5%;
+}
+
+.section-results .col .span-3-of-3 i{
+    color:#e67e22;
+    font-size:130%;
+    padding-right: 5px;
+}
+
+.section-results .col .span-3-of-3  a{
+    color:#aaa;
+    font-weight: 300;
+    font-size:80%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-results a:last-child div{
+    display:inline-block;
+    color:#32648e;
+    padding: 1px 15px 2px 15px;
+    border: 2px solid #32648e;
+    margin-top: 4px;
+    border-radius: 20px;
+    
+    
+}
+/* 
+Orange color - #e67e22
+Blue color - #32648e
+*/
+
+
+

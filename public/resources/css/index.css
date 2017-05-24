@@ -1,0 +1,589 @@
+
+/* 
+Orange color - #e67e22
+Blue color - #32648e
+*/
+/*----------------------------------------------------------------*/
+/* BASIC SETUP */
+/*----------------------------------------------------------------*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/*----------------------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*----------------------------------------------------------------*/
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section{
+    padding:40px 0;
+}
+
+/*------------HEADINGS----------------*/
+h1, h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2:after{
+    display:block;
+    height:2px;
+    background-color:#e67e22;
+    content: " ";
+    width: 100px;
+    margin: 25px auto 0 auto;
+}
+
+.clear-fix{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.small-font{
+    font-size: 70%;
+}
+
+strong{
+    font-weight:400;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: white;
+}
+/*----------------------------------------------------------------*/
+/* HEADER */
+/*----------------------------------------------------------------*/
+/*----------NAV------------------*/
+nav{
+    background-color: rgba(50, 100, 142, 0.97);
+    color:white;
+    height: 50px;
+    width:100%;
+    position:fixed;
+    z-index:9999;
+}
+/*----------LOGO-----------------*/
+
+figure{
+    position: relative;
+    margin:0;
+}
+
+figure img{
+    position: absolute;
+    clip: rect(0px, 70px, 40px, 30px);
+    width:100px;
+    margin-top: 0;
+    top:-5px;
+    left: -40px;
+    
+}
+
+.logo-name{
+    padding-left: 35px;
+}
+/* ---------NAVIGATION-----------*/
+header{
+    background-image: linear-gradient(rgba(85, 85, 85, 0.3), rgba(85, 85, 85, 0.7)), url(images/lagos3.jpg);
+    background-size:cover;
+    height:58vh;
+    color:white;
+    background-position:bottom;
+    background-attachment: fixed;
+}
+nav ul{
+    list-style: none;
+    float:right;
+}
+
+nav ul li{
+    display:inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a:link, nav ul li a:visited{
+    font-size:55%;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+
+nav ul li:last-child a{
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 7px 18px 7px 16px;
+}
+
+nav ul li a:hover, nav ul li a:active{
+    border-bottom: 1px solid #fff;
+}
+
+/* ---------JUMBOTRON-----------*/
+.hero-search-box{
+    position:absolute;
+    width:1140;
+    text-transform: uppercase;
+    top:35%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+/*-------JUMBO COMPONENT 1----------*/
+.jumbo-comp1{
+    display:inline-block;
+    width:100%;
+    padding-left:20%;
+}
+
+.from{
+    display: inline-block;
+    float:left;
+}
+
+.jumbo-comp1 span:first-of-type{
+    display:block;
+    font-size: 70%;
+}
+
+.jumbo-comp1 span i{
+    font-size: 50%;
+    padding-left: 3px;
+    vertical-align:middle;
+}
+
+.jumbo-comp1 span:last-of-type{
+    display:block;
+    font-size: 200%;
+    font-weight: 400;
+}
+
+.jumbo-plane{
+    display:inline-block;
+    transform: rotate(90deg);
+    float:left;
+    padding: 28px 15px;
+    font-size: 130%;
+}
+
+/*-------JUMBO COMPONENT 2----------*/
+.jumbo-comp2{
+    display:inline-block;
+    width:100%;
+    margin-left:-15px;
+}
+
+.jumbo-comp2 div{
+    padding: 0;
+    margin: -1;
+}
+
+.jumbo-comp2 div span:first-of-type{
+    display:block;
+    margin-bottom: 20px;
+    font-size: 80%;
+}
+.jumbo-comp2 div span:last-of-type{
+    color:#555;
+    background-color: #fff;
+    padding: 10px 64px 13px 60px;
+    font-size: 80%;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/*-------JUMBO COMPONENT 3----------*/
+.jumbo-comp3{
+    display:inline-block;
+    width:100%;
+    font-size:70%;
+    margin-left:20px;
+}
+
+.jumbo-comp3:before{
+    content:"";
+    margin-bottom: 27px;
+    
+}
+.jumbo-comp3 div{
+    display:inline-block;
+    width:45%;
+}
+
+a.btn-cat:link, a.btn-cat:visited{
+    background-color: #fff;
+    padding: 10px 16px 13px 26px;
+    font-size: 70%;
+    font-weight: 400;
+    border-radius: 4px;
+    color:#32648e;
+}
+
+a.btn-search:link, a.btn-search:visited{
+    background-color: #e67e22;
+    padding: 10px 16px 13px 26px;
+    font-size: 70%;
+    font-weight: 400;
+    border-radius: 4px;
+    margin-right: 0;
+}
+
+/*---------JUMBO TOGGLE COMPONENT -----------*/
+.toggler{
+    text-align: center;
+    font-size: 80%;
+    margin-top:-12px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  vertical-align:middle;
+  margin: 0 3px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #2196F3;
+  transition: .4s;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+input + .slider {
+  background-color: #fff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+
+/*----------------------------------------------------------------*/
+/* SECTION ABOUT */
+/*----------------------------------------------------------------*/
+
+.section-about{
+    text-align: center;
+    background: #fff;
+    padding: 20px 0;
+}
+
+.section-about ul{
+    width:100%;
+    list-style: none;
+}
+.section-about li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.section-about div:nth-child(2){
+    width:60%;
+    padding-left: 10%;
+    font-weight: 400;
+}
+
+.long-copy{
+    font-size: 90%;
+}
+
+
+/*----------------------------------------------------------------*/
+/* SECTION DESTINATIONS */
+/*----------------------------------------------------------------*/
+
+.section-destinations{
+    background-color: #f9f9f9;
+    text-transform: uppercase;
+    padding-bottom: 110px;
+}
+
+.section-destinations h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-destinations .row{
+    height:200px;
+    width:850px;
+    
+}
+
+.section-destinations .col{
+    position:relative;
+    height:100%;
+    border: 1px solid black;
+    color:#fff;
+}
+.section-destinations h3{
+    font-size: 140%;
+    font-weight: 400;
+} 
+.section-destinations h4{
+    font-size: 110%;
+    font-weight: 400;
+}
+
+.section-destinations span{
+    font-size:75%;
+}
+
+.section-destinations span i{
+    font-size:120%;
+    vertical-align: middle;
+     margin-right:5px;
+}
+
+.section-destinations span:first-of-type i{
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+.section-destinations h3, .section-destinations h4{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);  
+}
+
+.section-destinations span:first-of-type{
+    position:absolute;
+    top:85%;
+    left:25%;
+    transform:translate(-50%, -50%);
+}
+
+.gallery1 span:first-of-type{
+    position:absolute;
+    top:85%;
+    left:30%;
+    transform:translate(-50%, -50%);
+}
+
+.section-destinations span:last-of-type{
+    position:absolute;
+    top:85%;
+    left:65%;
+    transform:translate(-50%, -50%);
+}
+
+.section-destinations small{
+    margin-right:2.5px;
+}
+
+.gallery1{
+    background-image: linear-gradient(rgba(85, 85, 85, 0.3), rgba(85, 85, 85, 0.7)),  url(images/lagos1.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.gallery2{
+    background-image: linear-gradient(rgba(85, 85, 85, 0.3), rgba(85, 85, 85, 0.7)),  url(images/abj2.jpg);
+    background-size: cover;
+    background-position:bottom;
+}
+.gallery3{
+    background-image: linear-gradient(rgba(85, 85, 85, 0.3), rgba(85, 85, 85, 0.7)),  url(images/benin.jpg);
+    background-size: cover;
+    background-position:bottom;
+}
+.gallery4{
+    background-image: linear-gradient(rgba(85, 85, 85, 0.3), rgba(85, 85, 85, 0.7)),  url(images/cal2.jpg);
+    background-size: cover;
+    background-position:middle;
+}
+.gallery5{
+    background-image: linear-gradient(rgba(85, 85, 85, 0.3), rgba(85, 85, 85, 0.7)),  url(images/ph2.jpg);
+    background-size: cover;
+    background-position:bottom;
+}
+
+
+
+/*----------------------------------------------------------------*/
+/* SECTION SERVICES */
+/*----------------------------------------------------------------*/
+.section-services{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.section-services .row{
+    width: 70%;
+    padding-left: 3%;
+}
+.service-box{
+    width:80%;
+    text-align: center;
+    padding: 20px 10px;
+    margin
+    background-color: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 2px 2px #555;
+    margin-top: 40px;
+}
+
+.service-box i{
+    display: inline-block;
+    padding: 3px 5px;
+    border: 2px solid #32648e;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    color: #32648e;
+}
+
+.service-box p{
+    display: inline-block;
+    padding: 5px 14px;
+    margin-bottom: 10px;
+    font-size: 80%
+}
+
+.service-box h3{
+    padding: 5px 0;
+    margin-bottom: 10px;
+    font-size: 70%;
+    text-transform: uppercase;
+    color: #32648e;
+}
+
+.service-box p:nth-child(4){
+    font-size: 70%;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+}
+
+
+/*----------------------------------------------------------------*/
+/* FOOTER */
+/*----------------------------------------------------------------*/
+/* ---------FOOTER HEADER--------------*/
+
+h5{
+    text-transform: uppercase;
+    font-size: 60%;
+    font-weight: 400;
+    color:  #777;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+}
+
+
+.about-us > p, .about-us > span{
+    font-size: 75%;
+    width: 400px;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    margin-top: 10px;
+    color:  #ccc;
+    
+}
+
+.about-us > span{
+    display: inline-block;
+    margin-top: 20px; 
+    width: 200px;
+}
+
+table {
+    width: 80%;
+    float:right;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+td, th {
+    text-align: left;
+    padding: 5px 0;
+    color:#ddd;
+}
+/* ---------FOOTER FOOTER--------------*/
+footer{
+    color:white;
+    background-color:#333;
+}
+
+footer ul{
+    list-style: none;
+    display:inline-block;
+    float: right;
+    margin-right: 40%;
+}
+
+footer ul li{
+    display: inline-block;
+    margin-left: 10px;
+    font-size:100%;
+    font-weight: 100;
+}
+
+.footer span{
+    font-size:60%;
+    margin:5px;
+    color:#777;
+    
+}
+
+.footer .row div:first-child span:first-child{
+    display: block;
+    padding-left:30%;
+}
+
+
+.footer{
+    width: 100%;
+    background-color: #222;
+    padding: 5px;
+     color:#777;
+}
